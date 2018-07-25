@@ -25,7 +25,7 @@ describe('Block builder component should be implemented correctly', () => {
       ref={e => wrapperInput = e!}
       innerRef={e => innerInput = e!} /></>;
 
-    let mounted = enzyme.mount(component);
+    enzyme.mount(component);
 
     /// When
     wrapperInput.focus();
@@ -37,7 +37,7 @@ describe('Block builder component should be implemented correctly', () => {
   it('Triggering input - should trigger inner input event', () => {
     /// Setup
     props = spy({ ...instance(props), onChange: () => { } });
-    component = <InputImpl  {...instance(props)} />;
+    component = <><InputImpl  {...instance(props)} /></>;
     let mounted = enzyme.mount(component);
     let inputs = Numbers.range(0, 1000).map(() => Strings.randomString(10));
 
