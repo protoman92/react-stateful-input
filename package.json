@@ -1,0 +1,36 @@
+{
+  "name": "react-stateful-input",
+  "version": "1.0.0",
+  "description": "Stateful React input wrapper that deals with caret moving to end of text for controlled components",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "typings": "./dist/src/index.d.ts",
+  "scripts": {
+    "setup": "npm install",
+    "build": "tsc",
+    "test": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepublish": "rm -rf ./dist && tsc"
+  },
+  "repository": "https://github.com/protoman92/react-stateful-input.git",
+  "author": "Hai Pham",
+  "license": "MIT",
+  "dependencies": {
+    "javascriptutilities": "^1.5.7",
+    "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.10",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jest": "^23.3.0",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.4.1",
+    "react-dom": "^16.4.1",
+    "ts-jest": "^23.0.1",
+    "ts-mockito-2": "^2.2.8"
+  }
+}
