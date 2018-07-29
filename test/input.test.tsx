@@ -15,7 +15,7 @@ describe('Block builder component should be implemented correctly', () => {
 
   beforeEach(() => {
     enzyme.configure({ adapter: new Adapter() });
-    props = spy({})
+    props = spy({ key: 'Input key' });
   });
 
   it('Triggering focus - should focus inner input', () => {

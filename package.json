@@ -1,6 +1,6 @@
 {
   "name": "@haipham/react-stateful-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stateful React input wrapper that deals with caret moving to end of text for controlled components.",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
