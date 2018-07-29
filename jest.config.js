@@ -17,4 +17,6 @@ module.exports = {
     "json",
     "node"
   ],
+  verbose: true,
+  testURL: 'http://localhost/',
 }
