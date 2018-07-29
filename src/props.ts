@@ -1,3 +1,4 @@
+import { Indeterminate } from 'javascriptutilities';
 import { InputHTMLAttributes, Key } from 'react';
 
 export interface Type extends InputHTMLAttributes<HTMLInputElement> {
@@ -9,5 +10,5 @@ export interface Type extends InputHTMLAttributes<HTMLInputElement> {
    * When a key changes, the entire component will be recreated, effectively
    * resetting internal state.
    */
-  readonly key: Key;
+  readonly key: Indeterminate<Key>;
 }

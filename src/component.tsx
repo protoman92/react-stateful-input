@@ -5,6 +5,11 @@ import { Type as Props } from './props';
 import { Type as State } from './state';
 type OnChange = ChangeEventHandler<HTMLInputElement>;
 
+/**
+ * Note this is an uncontrolled component that relies on some tricks to force
+ * re-create. If we want total controlled behavior we are better off using a
+ * normal input element, but will have to deal with jumping carets.
+ */
 export class InputImpl extends PureComponent<Props, State> {
   private inputRef?: HTMLInputElement | null;
 
