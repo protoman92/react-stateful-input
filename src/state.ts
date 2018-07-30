@@ -1,3 +1,4 @@
 export interface Type {
-  readonly value?: string | number | string[];
+  readonly selectionStart: number | null;
+  readonly selectionEnd: number | null;
 }
