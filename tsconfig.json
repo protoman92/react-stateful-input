@@ -32,19 +32,11 @@
       "es2015.symbol.wellknown",
       "esnext.asynciterable"
     ],
-    "types": [
-      "node",
-      "react",
-      "jest"
-    ],
+    "types": ["node", "react", "jest"],
     "baseUrl": "src",
     "paths": {
-      "component": [
-        "component.tsx"
-      ],
-      "props": [
-        "props.ts"
-      ],
+      "component": ["component.tsx"],
+      "props": ["props.ts"]
     }
   },
   "compileOnSave": true

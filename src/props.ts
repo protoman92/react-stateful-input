@@ -1,5 +1,5 @@
-import { Undefined } from 'javascriptutilities';
-import { InputHTMLAttributes, Key } from 'react';
+import {Undefined} from 'javascriptutilities';
+import {InputHTMLAttributes, Key} from 'react';
 
 export interface Type extends InputHTMLAttributes<HTMLInputElement> {
   readonly innerRef?: (e: HTMLInputElement | null) => void;
