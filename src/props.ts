@@ -1,4 +1,4 @@
-import { Indeterminate } from 'javascriptutilities';
+import { Undefined } from 'javascriptutilities';
 import { InputHTMLAttributes, Key } from 'react';
 
 export interface Type extends InputHTMLAttributes<HTMLInputElement> {
@@ -10,5 +10,5 @@ export interface Type extends InputHTMLAttributes<HTMLInputElement> {
    * This is kept to protect against future implementations that could make
    * this component uncontrolled.
    */
-  readonly key: Indeterminate<Key>;
+  readonly key: Undefined<Key>;
 }
